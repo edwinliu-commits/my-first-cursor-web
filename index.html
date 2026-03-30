@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的待办</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>待办事项</h1>
+        <p class="subtitle">轻量清单，专注今天</p>
+      </header>
+
+      <form class="add-form" id="add-form" autocomplete="off">
+        <label for="task-input" class="sr-only">新任务</label>
+        <input
+          type="text"
+          id="task-input"
+          name="task"
+          placeholder="写点什么，按回车添加…"
+          maxlength="200"
+          required
+        />
+        <button type="submit" class="btn btn-primary">添加</button>
+      </form>
+
+      <ul class="todo-list" id="todo-list" aria-live="polite"></ul>
+
+      <p class="empty-hint" id="empty-hint">还没有任务，上面输入一条试试吧。</p>
+
+      <footer class="footer">
+        <button type="button" class="btn btn-ghost" id="clear-done">清除已完成</button>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
