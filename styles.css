@@ -1,13 +1,13 @@
 :root {
-  --bg: #0f1419;
-  --surface: #1a2332;
-  --border: #2d3a4d;
-  --text: #e8eef4;
-  --muted: #8b9cb3;
-  --accent: #5b9fd4;
-  --accent-hover: #7eb8e5;
-  --done: #6b7c8f;
-  --danger: #c45c5c;
+  --bg: #f6f9ff;
+  --surface: #ffffff;
+  --border: #d7e1f0;
+  --text: #0f1b2d;
+  --muted: #5b6b82;
+  --accent: #2d6cdf;
+  --accent-hover: #1f5fd6;
+  --done: #7b8aa1;
+  --danger: #b93a3a;
   --radius: 12px;
   --font: "SF Pro Text", "Segoe UI", system-ui, sans-serif;
 }
@@ -25,7 +25,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--text);
-  background: radial-gradient(ellipse 120% 80% at 50% -20%, #1e3a5f 0%, var(--bg) 55%);
+  background: radial-gradient(ellipse 120% 80% at 50% -20%, #cfe3ff 0%, var(--bg) 60%);
 }
 
 .app {
@@ -89,7 +89,7 @@ body {
 
 .add-form input:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(91, 159, 212, 0.25);
+  box-shadow: 0 0 0 3px rgba(45, 108, 223, 0.18);
 }
 
 .btn {
@@ -103,7 +103,7 @@ body {
 
 .btn-primary {
   background: var(--accent);
-  color: #0a0e12;
+  color: #ffffff;
   font-weight: 600;
   flex-shrink: 0;
 }
