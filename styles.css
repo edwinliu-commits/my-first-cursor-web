@@ -53,9 +53,12 @@ body::after {
   background:
     radial-gradient(44vmax 34vmax at 86% 30%, rgba(45, 108, 223, 0.12) 0%, rgba(45, 108, 223, 0) 62%),
     radial-gradient(26vmax 20vmax at 92% 78%, rgba(207, 227, 255, 0.9) 0%, rgba(207, 227, 255, 0) 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='none'%3E%3Ccircle cx='110' cy='110' r='2.2' fill='%23d83b3b' fill-opacity='0.75'/%3E%3Cg fill='%23d83b3b' fill-opacity='0.32'%3E%3Cellipse cx='110' cy='102' rx='4.8' ry='3.6'/%3E%3Cellipse cx='117' cy='106' rx='4.8' ry='3.6' transform='rotate(60 117 106)'/%3E%3Cellipse cx='117' cy='114' rx='4.8' ry='3.6' transform='rotate(120 117 114)'/%3E%3Cellipse cx='110' cy='118' rx='4.8' ry='3.6'/%3E%3Cellipse cx='103' cy='114' rx='4.8' ry='3.6' transform='rotate(60 103 114)'/%3E%3Cellipse cx='103' cy='106' rx='4.8' ry='3.6' transform='rotate(120 103 106)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
     radial-gradient(circle at 1px 1px, rgba(91, 107, 130, 0.14) 1px, rgba(0, 0, 0, 0) 1.6px);
-  background-size: auto, auto, 22px 22px;
-  opacity: 0.6;
+  background-size: auto, auto, 220px 220px, 22px 22px;
+  background-position: 0 0, 0 0, 92% 20%, 0 0;
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+  opacity: 0.5;
 }
 
 .app {
