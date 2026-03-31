@@ -26,6 +26,36 @@ body {
   line-height: 1.5;
   color: var(--text);
   background: radial-gradient(ellipse 120% 80% at 50% -20%, #cfe3ff 0%, var(--bg) 60%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: -20vmax;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.9;
+  filter: blur(0px);
+}
+
+/* 左侧淡蓝光斑 */
+body::before {
+  background:
+    radial-gradient(45vmax 35vmax at 18% 38%, rgba(45, 108, 223, 0.16) 0%, rgba(45, 108, 223, 0) 60%),
+    radial-gradient(28vmax 22vmax at 12% 82%, rgba(126, 184, 229, 0.22) 0%, rgba(126, 184, 229, 0) 62%);
+}
+
+/* 右侧轻微纹理 + 光斑 */
+body::after {
+  background:
+    radial-gradient(44vmax 34vmax at 86% 30%, rgba(45, 108, 223, 0.12) 0%, rgba(45, 108, 223, 0) 62%),
+    radial-gradient(26vmax 20vmax at 92% 78%, rgba(207, 227, 255, 0.9) 0%, rgba(207, 227, 255, 0) 60%),
+    radial-gradient(circle at 1px 1px, rgba(91, 107, 130, 0.14) 1px, rgba(0, 0, 0, 0) 1.6px);
+  background-size: auto, auto, 22px 22px;
+  opacity: 0.6;
 }
 
 .app {
@@ -140,6 +170,7 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: 0 10px 26px rgba(15, 27, 45, 0.06);
   animation: enter 0.2s ease;
 }
 
